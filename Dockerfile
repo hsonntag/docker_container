@@ -7,7 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get upgrade -y
 RUN apt-get install -y --no-install-recommends \
-	    emacs emacs-goodies.el curl aspell \
+	    emacs emacs-goodies.el curl git aspell aspell-en \
 	    python3 python3-pip python3-virtualenv python3-dev build-essential
 
 # From https://pythonspeed.com/articles/activate-virtualenv-dockerfile/
